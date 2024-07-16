@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.Navbar{
+    opacity: 0;
+    transition: 1s;
+    animation: nav linear 1 1s forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes nav {
+    0%{
+        background: transparent;
+        opacity: 0;
+    }
+    100%{
+        background-color: black;
+        opacity: 1;
+        width: 70%;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.Header_Main{
+    background: url(../public/Port_Bg_Main.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.Words_Stroke{
+    
+    -webkit-text-stroke: 2px rgba(255, 166, 0, 0.402);
+    color: transparent;
+}
+.Words_Animation{
+    animation: stroke 5s linear  infinite ;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+@keyframes stroke {
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 50%;
+    /* -webkit-text-stroke: 1px rgba(215, 215, 215, 0.884); */
+
+    }
+    100%{
+        width: 0%;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.About_Design::before{
+    position: absolute;
+    content: 'ABOUT';
+    top: -30px;
+    font-size: 80px;
+    color: rgba(59, 59, 59, 0.224);
+    font-weight: 900;
+}
+.Div_Design_item{
+    animation: item linear alternate infinite 2s;
+    position: absolute;
+    left: 0%;
+}
+@keyframes item {
+    0%{
+
+    }
+    100%{
+        left: 100%;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
+.D2::before{
+    content: 'SKILLS';
+    color: rgba(215, 215, 215, 0.224);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
