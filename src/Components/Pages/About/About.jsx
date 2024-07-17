@@ -1,29 +1,29 @@
 import React, { Fragment, useEffect } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
+// import Autoplay from "embla-carousel-autoplay";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { SiPingdom } from "react-icons/si";
 import { TbBrandAlpineJs } from "react-icons/tb";
 
 
-let sliderImgs = [
-    {
-        img : './Aman.png'
-    },
-    {
-        img : './Aman.png'
-    },
-    {
-        img : './Aman.png'
-    }
-]
+// let sliderImgs = [
+//     {
+//         img : './aman2.png'
+//     },
+//     {
+//         img : './aman4.png'
+//     },
+//     {
+//         img : './aman5.png'
+//     }
+// ]
 
 
 let aboutData = [
@@ -64,13 +64,23 @@ function About() {
         });
       }, []);
 
+
+      const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = process.env.PUBLIC_URL + './Aman Ullah.pdf'; // Path to your PDF file
+        link.download = 'Aman Ullah.pdf'; // Desired file name for download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+
       
      
 
 
   return (
     <Fragment>
-      <div className="mt-16 relative">
+      <div className="mt-16 relative Skill_Bg" id="about">
         
         <div className="flex flex-col items-center About_Design relative" data-aos='fade-up'>
           <h1 className="text-[30px] font-extrabold relative">ABOUT ME</h1>
@@ -81,7 +91,8 @@ function About() {
         <div className="flex justify-evenly mt-10 overflow-x-hidden py-5" >
           <div className="w-[30%] flex justify-center relative   items-center">
           <div className="w-[98%] h-[98%] relative bg-white z-10">
-            <Carousel
+            <img src="./aman2.webp" alt="" />
+            {/* <Carousel
               className="w-full"
               plugins={[
                 Autoplay({
@@ -89,26 +100,27 @@ function About() {
                 }),
               ]}
             >
-              <CarouselContent className="pt-3">
+              <CarouselContent className="pt-3 w-full bg-blue-300 h-[70vh] overflow-y-hidden">
                 {
-                    sliderImgs.map((elm,ind) =><CarouselItem key={ind}><img src={elm.img} className="w-full block mx-auto" alt="" /></CarouselItem>)
+                    sliderImgs.map((elm,ind) =><CarouselItem key={ind} className='h-full w-full'><img src={elm.img} className="w-full " alt={`img ${ind}`} /></CarouselItem>)
                 }
                 
                 
               </CarouselContent>
-              <CarouselPrevious className="right-[20%] top-4 left-auto" />
-              <CarouselNext className="right-0 top-4" />
-            </Carousel>
+              <CarouselPrevious className="right-[20%] -top-2 left-auto hover:bg-orange-500 hover:text-white" />
+              <CarouselNext className="right-0 -top-2 bg-orange-500 hover:bg-transparent text-white hover:text-black" />
+            </Carousel> */}
           </div>
           </div>
           <div className="w-[50%] " data-aos="fade-left" data-aos-offset='0'>
-            <h1 className="font-extrabold py-4">My Name is : <span className="text-orange-500 text-[20px]">Aman Ullah</span></h1>
+            <h1 className="font-extrabold py-4"><span className="text-orange-500 text-[40px]">Aman Ullah</span></h1>
             {
                 aboutData.map((elm,ind)=><div key={ind} className="flex justify-between opacity-60 py-2 border-b border-gray-200">
                     <h2 className="flex gap-2 items-center"><SiPingdom/> {elm.title}</h2>
                     <p className="w-[60%] flex gap-2 items-center"><TbBrandAlpineJs/> {elm.ans}</p>
                 </div>)
             }
+          <button className="py-2 w-[50%] bg-orange-500 rounded-full mt-5 text-white hover:text-black hover:bg-transparent border hover:border hover:border-black" onClick={handleDownload}>Download CV</button>
           </div>
         </div>
       </div>

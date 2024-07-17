@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlinePlayCircle } from "react-icons/hi2";
 import { MdDialpad, MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import ReactTypingEffect from "react-typing-effect";
 function Header() {
   return (
     <Fragment>
-      <div className="w-full h-screen bg-blue-400 Header_Main flex overflow-x-hidden  items-end relative text-white">
+      <div id="home" className="w-full h-screen bg-blue-400 Header_Main flex overflow-hidden  items-end relative text-white">
         <div className="rotate-[90deg] ml-[-60px] top-[30%] flex items-center gap-5 absolute" >
           <MdDialpad className="rotate-[-90deg]" />
           <p>( +92 ) 309 435579 1</p>
@@ -23,19 +23,19 @@ function Header() {
           <MdKeyboardDoubleArrowRight className="text-orange-500" />
         </div>
 
-        <div className=" right-[3.5%] absolute bottom-[20%] flex flex-col items-center gap-5">
+        <div className=" right-[3.5%] z-40 absolute bottom-[20%] flex flex-col items-center gap-5">
          
-        <Link to='' className="p-2 rounded-full bg-[#80808062]">
+        <Link to='https://www.facebook.com/profile.php?id=100061582960084' className="p-2 rounded-full cursor-pointer hover:text-orange-500 bg-[#80808062]">
             <FaFacebook/>
         </Link>
-        <Link to='' className="p-2 rounded-full bg-[#80808062]">
+        <Link to='' className="p-2 rounded-full cursor-pointer hover:text-orange-500 bg-[#80808062]">
             <FaInstagram/>
         </Link>
-        <Link to='' className="p-2 rounded-full bg-[#80808062]">
+        <Link to='https://www.linkedin.com/in/amanullah91/' className="p-2 rounded-full cursor-pointer hover:text-orange-500 bg-[#80808062]">
             <FaLinkedin/>
         </Link>
-        <Link to='' className="p-2 rounded-full bg-[#80808062]">
-            <FaTwitter/>
+        <Link to='https://github.com/Am4n-Ull4h' className="p-2 rounded-full cursor-pointer hover:text-orange-500 bg-[#80808062]">
+            <FaGithub/>
         </Link>
         </div>
 
@@ -86,7 +86,7 @@ function Header() {
               </span>
             </button>
           </div>
-          <img src="./Aman.png" className="w-[100vh] absolute right-3" alt="" data-aos='zoom-in' />
+          <img src="./aman3.webp" className="w-[50%] absolute top-0 right-3" alt="" data-aos='zoom-in' />
         </div>
         
       </div>

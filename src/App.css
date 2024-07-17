@@ -18,10 +18,20 @@
 
 
 .Header_Main{
-    background: url(../public/Port_Bg_Main.png);
+    background: url(../public/Port_Bg_Main.webp);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
+/* .HM2{
+  background: url(../public/Depth.jpg);
+  background-size: 100% 100%;
+    background-attachment: fixed;
+} */
+/* .Skill_Bg{
+  background: url(../public/skillbg.svg);
+  background-size: 100% 100%;
+    background-attachment: fixed;
+} */
 .Words_Stroke{
     
     -webkit-text-stroke: 2px rgba(255, 166, 0, 0.402);
@@ -69,7 +79,130 @@
 }
 
 .D2::before{
-    content: 'SKILLS';
+    content: 'SERVICES';
     color: rgba(215, 215, 215, 0.224);
 
 }
+.D4::before{
+  content: 'RESUME';
+  color: rgba(215, 215, 215, 0.224);
+
+}
+.D3::before{
+    content: 'SKILLS';
+    color: rgba(59, 59, 59, 0.224);
+
+}
+.D5::before{
+  content: 'WORKS';
+  color: rgba(59, 59, 59, 0.224);
+
+}
+
+.collapsed {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+
+  .expanded {
+    display: block;
+  }
+
+  .Skill_Para{
+    margin-top: 70px;
+    opacity: 0;
+    transition: .5s;
+  }
+  .Skill_Design:hover .Skill_Para{
+    margin-top: 40px;
+    opacity: 1;
+
+  }
+  .Skill_Design::before{
+    height: 4px;
+    background: #f97316;
+    position: absolute;
+    content: '';
+    width: 0%;
+    transition: .5s;
+    left: 0;
+    top: 0;
+  }
+  .Skill_Design:hover:before{
+    width: 100%;
+  }
+  .Skill_Btn{
+    transform: scale(.5);
+    transition: .5s;
+  }
+  .Skill_Design:hover .Skill_Btn{
+    transform: scale(1.2);
+    background: #f97316;
+  }
+
+  .stroke{
+    -webkit-text-stroke: 2px gray;
+    color: transparent;
+  }
+
+  .skills_skill:hover .stroke{
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: transparent;
+  }
+  .dropShadow{
+    filter: drop-shadow(0px 10px 5px rgba(49, 49, 48, 0.548));
+  }
+  .overScroll::-webkit-scrollbar{
+    display: none;
+  }
+  .canvas {
+    width: 50vw;
+    height: 500px;
+    background-color: #000;
+    display: block;
+  }
+  
+  .canvas-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+  }
+
+  .Work_Design{
+    animation: work .3s linear 1 forwards;
+  }
+
+  @keyframes work {
+    0%{
+      opacity: 0;
+      transform: scale(.9);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .Work_Link{
+    margin-left: -100%;
+    transition: 1s;
+    backdrop-filter: blur(2px);
+  }
+  .Work_Design_Par:hover .Work_Link{
+    margin-left: 0px;
+  }
+  .BGF{
+    backdrop-filter: blur(2px);
+  }
+  .Work_Design_Par img{
+    transition: .5s;
+  }
+  .Work_Design_Par:hover img{
+    transform: scale(1.2);
+  }
