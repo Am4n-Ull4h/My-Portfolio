@@ -4,102 +4,82 @@ let skillData = [
   {
     img: "./react.png",
     name: "React",
-    perc: "90%",
   },
   {
     img: "./node-js.png",
     name: "Node",
-    perc: "85%",
   },
   {
     img: "./php.png",
     name: "PHP",
-    perc: "75%",
   },
   {
     img: "./python.png",
     name: "Python",
-    perc: "70%",
   },
   {
     img: "./sql-server.png",
     name: "SQL",
-    perc: "90%",
   },
   {
     img: "./mongo.png",
     name: "MongoDB",
-    perc: "93%",
   },
   {
     img: "./js.png",
     name: "JavaScript",
-    perc: "93%",
   },
   {
     img: "./figma.png",
     name: "Figma",
-    perc: "83%",
   },
   {
     img: "./bootstrap.png",
     name: "Bootstrap",
-    perc: "99%",
   },
   {
     img: "./html-5.png",
     name: "HTML",
-    perc: "100%",
   },
   {
     img: "./css-3.png",
     name: "CSS",
-    perc: "98%",
   },
   {
     img: "./seo.png",
     name: "SEO",
-    perc: "91%",
   },
   {
     img: "./aws.png",
     name: "AWS",
-    perc: "90%",
   },
   {
     img: "./github.png",
     name: "GitHub",
-    perc: "95%",
   },
   {
     img: "./typescript.png",
     name: "TypeScript",
-    perc: "85%",
   },
   {
     img: "./wordpress.png",
     name: "WordPress",
-    perc: "90%",
   },
   {
     img: "./material.png",
     name: "Material UI",
-    perc: "96%",
   },
   {
     img: "./shad.png",
     name: "Shadcn UI",
-    perc: "95%",
   },
   {
     img: "./three.png",
     name: "ThreeJS",
-    perc: "94%",
   },
   {
     img: "./cloud.png",
     name: "CloudFlare",
-    perc: "90%",
   },
 ];
 
@@ -139,9 +119,7 @@ function Skills() {
           </div>
           <div>
             <p>{elm.name}</p>
-            <p className="stroke text-[30px] font-extrabold">
-              {elm.perc}
-            </p>
+            
           </div>
         </div>
       ))}

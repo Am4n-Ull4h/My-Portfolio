@@ -57,7 +57,7 @@ function Footer() {
 
                     <p className='mt-16 mb-6'>Follow for more :</p>
                     <div className='w-full flex bg-gray-200 rounded-full py-4 justify-center'>
-                        <input type="text" className='w-[80%] focus:outline-none bg-transparent' placeholder='Enter your email' name="" id="" />
+                        <input type="text" className='w-[70%] px-2 focus:outline-none bg-transparent' placeholder='Enter your email' name="" id="" />
                         <button className='p-3 bg-orange-500 rounded-full hover:bg-transparent hover:border border-black hover:text-black text-white'><MdOutlineArrowForward /></button>
 
                     </div>
