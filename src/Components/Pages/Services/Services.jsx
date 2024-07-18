@@ -38,7 +38,7 @@ function Services() {
 
   return (
     <Fragment>
-      <div className='mt-10 Header_Main py-8 ' id='services'>
+      <div className='mt-10 Header_Main py-8 w-full overflow-x-hidden' id='services'>
       <div className="flex flex-col items-center text-white D2 About_Design relative" data-aos='fade-up'>
           <h1 className="text-[30px] font-extrabold relative">MY SERVICES</h1>
           <div className="Div_Design w-[20%] h-[5px] rounded-full relative ">
@@ -55,15 +55,15 @@ function Services() {
 
         </div>
         <div className='sm:w-[80%] w-[90%] mx-auto flex flex-col items-center text-white'>
-            <div className='md:w-[90%] w-full mx-auto flex items-center gap-3'>
-                <div className='md:w-[30%] w-[20%] md:h-[15vh] h-[9vh] rounded-full bg-black' style={{background:'url(./meeting1.webp', backgroundSize:'cover',backgroundPosition:'center'}}>
+            <div className='md:w-[90%] w-full mx-auto flex items-center gap-3 ServiceTurn1'>
+                <div className='md:w-[30%] ServiceTurn2 w-[20%] md:h-[15vh] h-[9vh] rounded-full bg-black' style={{background:'url(./meeting1.webp', backgroundSize:'cover',backgroundPosition:'center'}}>
 
                 </div>
                 <p className='md:text-[50px] text-[40px] font-extralight'>Turn your <span className=' font-extrabold stroke'>Ideas</span></p>
             </div>
-            <div className='w-[100%] mx-auto flex items-center  justify-end  gap-3'>
+            <div className='w-[100%] mx-auto flex items-center ServiceTurn1  justify-end  gap-3'>
                 <p className='md:text-[50px] text-[40px] font-extrabold'><span className='stroke'>Into</span> <span className=' font-extralight'>Reality</span></p>
-                <div className='md:w-[20%] sm:w-[30%] w-[35%] cursor-pointer md:h-[10vh] h-[7vh] flex justify-center items-center rounded-full bg-orange-500'>
+                <div className='md:w-[20%] sm:w-[30%] ServiceTurn3 w-[35%] cursor-pointer md:h-[10vh] h-[7vh] flex justify-center items-center rounded-full bg-orange-500'>
                     <p className='flex gap-3'>What I Do <span className='p-2 rounded-full bg-black text-white'><LiaNetworkWiredSolid/></span></p>
                 </div>
             </div>

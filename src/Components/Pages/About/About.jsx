@@ -82,7 +82,7 @@ function About() {
 
   return (
     <Fragment>
-      <div className="md:mt-16 mt-8 relative Skill_Bg" id="about">
+      <div className="md:mt-16 mt-8 relative Skill_Bg w-full overflow-x-hidden" id="about">
         
         <div className="flex flex-col items-center About_Design relative" data-aos='fade-up'>
           <h1 className="text-[30px] font-extrabold relative">ABOUT ME</h1>

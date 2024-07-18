@@ -132,7 +132,7 @@ function Skills() {
           <span className="hid cursor-pointer text-blue-600 text-[12px]" onClick={()=>setSkillElips(!skillElips)}>{skillElips ? 'See more' : 'See less'}</span>
           <div className="flex justify-evenly flex-wrap pb-3 md:w-[90%] gap-y-3 mt-7 overflow-y-scroll h-[82vh] overScroll">
       {skillData.slice(0, visibleItems).map((elm, ind) => (
-        <div key={ind} className="flex w-[47%] shadow-2xl border bg-[#8080805b] p-5 items-center justify-evenly rounded-2xl hover:bg-orange-500 hover:text-white text-gray-500 skills_skill"
+        <div key={ind} className="flex w-[47%] SingleSkill shadow-2xl border bg-[#8080805b] p-5 items-center justify-evenly rounded-2xl hover:bg-orange-500 hover:text-white text-gray-500 skills_skill"
         style={{backdropFilter:'blur(2px)'}}>
           <div className="p-4 bg-gray-300 rounded-full">
             <img src={elm.img} className="h-[10vh] w-full rounded-full" alt="" />

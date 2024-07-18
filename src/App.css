@@ -18,7 +18,7 @@
 
 
 .Header_Main{
-    background: url(../public/Port_Bg_Main.webp);
+    background: url('https://am4n-portfolio.netlify.app/Port_Bg_Main.webp');
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -114,8 +114,9 @@
 
   .Skill_Para{
     margin-top: 70px;
-    opacity: 0;
+    opacity: .5;
     transition: .5s;
+    
   }
   .Skill_Design:hover .Skill_Para{
     margin-top: 40px;
@@ -260,5 +261,24 @@
     }
     .hid{
       display: block;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .SingleSkill{
+      width: 90%;
+    }
+    .ServiceTurn1{
+      display: block;
+    }
+    .ServiceTurn2{
+      width: 45%;
+      margin-top: 20px;
+    }
+    .ServiceTurn3{
+      width: 45%;
+      margin-top: 10px;
+      margin-left: auto;
+      padding: 20px 0px;
     }
   }
