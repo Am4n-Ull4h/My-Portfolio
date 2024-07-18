@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, lazy, useEffect } from "react";
 // import {
 //   Carousel,
 //   CarouselContent,
@@ -11,6 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { SiPingdom } from "react-icons/si";
 import { TbBrandAlpineJs } from "react-icons/tb";
+const Rotate = lazy(()=> import('../Rotate/Rotate'));
+
 
 
 // let sliderImgs = [
@@ -80,7 +82,7 @@ function About() {
 
   return (
     <Fragment>
-      <div className="mt-16 relative Skill_Bg" id="about">
+      <div className="md:mt-16 mt-8 relative Skill_Bg" id="about">
         
         <div className="flex flex-col items-center About_Design relative" data-aos='fade-up'>
           <h1 className="text-[30px] font-extrabold relative">ABOUT ME</h1>
@@ -88,8 +90,8 @@ function About() {
             <div className="Div_Design_item h-[100%] w-[20%] rounded-full bg-orange-500"></div>
           </div>
         </div>
-        <div className="flex justify-evenly mt-10 overflow-x-hidden py-5" >
-          <div className="w-[30%] flex justify-center relative   items-center">
+        <div className="flex md:flex-nowrap flex-wrap md:justify-evenly md:mt-10 mt-4 py-5" >
+          <div className="lg:w-[30%] sm:w-[50%] w-[70%] md:mx-0 mx-auto flex justify-center relative   items-center">
           <div className="w-[98%] h-[98%] relative bg-white z-10">
             <img src="./aman2.webp" alt="" />
             {/* <Carousel
@@ -112,15 +114,16 @@ function About() {
             </Carousel> */}
           </div>
           </div>
-          <div className="w-[50%] " data-aos="fade-left" data-aos-offset='0'>
-            <h1 className="font-extrabold py-4"><span className="text-orange-500 text-[40px]">Aman Ullah</span></h1>
+          <div className="md:w-[50%] sm:w-[80%] w-[90%] md:mx-0 mx-auto" data-aos="fade-left" data-aos-offset='0'>
+            <Rotate/>
+            <h1 className="font-extrabold py-4 relative"><span className="text-orange-500 text-[40px]">Aman Ullah</span></h1>
             {
-                aboutData.map((elm,ind)=><div key={ind} className="flex justify-between opacity-60 py-2 border-b border-gray-200">
+                aboutData.map((elm,ind)=><div key={ind} className="flex relative justify-between opacity-60 py-2 border-b border-gray-200">
                     <h2 className="flex gap-2 items-center"><SiPingdom/> {elm.title}</h2>
                     <p className="w-[60%] flex gap-2 items-center"><TbBrandAlpineJs/> {elm.ans}</p>
                 </div>)
             }
-          <button className="py-2 w-[50%] bg-orange-500 rounded-full mt-5 text-white hover:text-black hover:bg-transparent border hover:border hover:border-black" onClick={handleDownload}>Download CV</button>
+          <button className="py-2 relative md:mx-0 mx-auto block w-[50%] bg-orange-500 rounded-full mt-5 text-white hover:text-black hover:bg-transparent border hover:border hover:border-black" onClick={handleDownload}>Download CV</button>
           </div>
         </div>
       </div>

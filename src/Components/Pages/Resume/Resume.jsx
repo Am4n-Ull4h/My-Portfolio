@@ -31,19 +31,19 @@ let EduData = [
 let expData = [
   {
     date : 'Feb 2024 - Continue',
-    degree : '   Investor App (Web-App + Landing-Page)  )  ',
+    degree : '   Investor App (Web-App + Landing-Page)',
     schoolName : 'Upwork Client',
     descrip : "Developed an Investor Web App + Landing Page using the MERN stack (MongoDB, Express, React, Node.js). This project included features for managing investments, tracking portfolios, and analyzing market trends. Additionally, it incorporated functionalities such as posting jobs, sharing Upwork stories similar to Instagram posts, and creating events. Focused on delivering a responsive and intuitive user interface, secure data handling, and real-time updates to enhance user engagement and investment decisions"
   },
   {
     date : 'Jan 2024 - Feb 2024',
-    degree : '  Pricing Plan Landing Page  )  ',
+    degree : '  Pricing Plan Landing Page',
     schoolName : 'Upwork Client',
     descrip : "I developed a Pricing Plan Landing Page for an Upwork client using Next.js. This project involved creating a dynamic and responsive landing page that effectively showcases pricing options and encourages user engagement. Leveraging Next.js, I ensured fast performance and seamless navigation, enhancing the client's online presence and conversion rates  "
   },
   {
     date : 'Jan 2023 - Mar 2023',
-    degree : '  Clikkle-Web-App / Admin-Panel )  ',
+    degree : '  Clikkle-Web-App / Admin-Panel',
     schoolName : 'Upwork Client',
     descrip : 'Developed the Clikkle-Web-App and Admin-Panel using the MERN stack (MongoDB, Express, React, Node.js). This project included creating a responsive web application and an intuitive admin panel for efficient content management. Focused on user-friendly design, secure data operations, and seamless functionality to support business operations.   '
   },
@@ -102,32 +102,36 @@ function Resume() {
 
 
   const [exp,setExp] = useState(4)
+  const [skillElips, setSkillElips] = useState(true)
+  const [skillElips2, setSkillElips2] = useState(true)
+
   return (
     <Fragment>
-      <div className='Header_Main HM2 py-7 overflow-x-hidden'>
+      <div className='Header_Main HM2 md:py-7 py-3 overflow-x-hidden'>
       <div className="flex flex-col items-center text-white D4 About_Design relative" data-aos='fade-up'>
           <h1 className="text-[30px] font-extrabold relative">MY RESUME</h1>
           <div className="Div_Design w-[20%] h-[5px] rounded-full relative ">
             <div className="Div_Design_item h-[100%] w-[20%] rounded-full bg-orange-500"></div>
           </div>
         </div>
-        <div className="mt-10 justify-between flex w-[95%] mx-auto">
-          <div className="w-[48%]" data-aos='fade-right'>
+        <div className="mt-10 justify-between flex md:flex-nowrap flex-wrap w-[95%] mx-auto">
+          <div className="md:w-[48%] w-[95%] md:mx-0 mx-auto" data-aos='fade-right'>
             <h1 className='text-white  py-5 flex gap-5 items-center text-[20px] font-extrabold'><MdOutlineCastForEducation className='text-orange-500'/> Educational Experience</h1>
             <div className='text-white'>
             {
                 EduData.slice(0,exp).map((edu, index) => (
                   <div key={index} className='flex gap-5'>
-                    <p className='text-nowrap mt-5 bg-[#8080806d] h-[30px] w-[25%] px-3 rounded-full flex justify-center items-center text-[10px]'>{edu.date}</p>
+                    <p className='text-nowrap mt-5 bg-[#8080806d] h-[30px]  md:w-[25%] w-[20%] px-3 rounded-full flex justify-center items-center text-[10px]'>{edu.date}</p>
                     <div className='w-[15%]  flex relative justify-center'>
                         <div className='h-full w-[3px] bg-gray-400 rounded-full'></div>
                         <div className='w-full h-[3px] bg-gray-400 absolute mt-8 rounded-full'></div>
                         <div className='w-[20px] h-[20px] bg-black absolute mt-6 rounded-full border-2 border-gray-400'></div>
                     </div>
-                    <div className='pt-5 w-[60%]'>
+                    <div className='pt-5 md:w-[60%] w-[65%]'>
                       <h1 className='text-[20px] text-orange-500 font-light'>{edu.degree}</h1>
                       <h2 className='text-[13px] font-extrabold'>{edu.schoolName}</h2>
-                      <p className='text-[14px] text-gray-400'>{edu.descrip}</p>
+                      <p className={`text-[14px] text-gray-400 ${skillElips ? "collapsed4" : 'expanded4'}`}>{edu.descrip}</p>
+                      <span className="hid4 cursor-pointer text-blue-600 text-[12px]" onClick={()=>setSkillElips(!skillElips)}>{skillElips ? 'See more' : 'See less'}</span>
                     </div>
                   </div>
                 ))
@@ -135,22 +139,23 @@ function Resume() {
             </div>
 
           </div>
-          <div className="w-[48%]"  data-aos='fade-left'>
+          <div className="md:w-[48%] w-[95%] md:mx-0 mx-auto md:mt-0 mt-10"  data-aos='fade-left'>
           <h1 className='text-white py-5 flex gap-5 items-center text-[20px] font-extrabold'><BsSuitcaseLg className='text-orange-500'/> Work Experience</h1>
             <div className='text-white h-[100vh] overflow-y-scroll overScroll relative'>
               {
                 expData.slice(0,exp).map((edu, index) => (
                   <div key={index} className='flex gap-5'>
-                    <p className='text-nowrap mt-5 bg-[#8080806d] h-[30px] w-[25%] px-3 rounded-full flex justify-center items-center text-[10px]'>{edu.date}</p>
+                    <p className='text-nowrap mt-5 bg-[#8080806d] h-[30px] md:w-[25%] w-[20%] sm:px-3 rounded-full flex justify-center items-center text-[7px] sm:text-[10px]'>{edu.date}</p>
                     <div className='w-[15%]  flex relative justify-center'>
                         <div className='h-full w-[3px] bg-gray-400 rounded-full'></div>
                         <div className='w-full h-[3px] bg-gray-400 absolute mt-8 rounded-full'></div>
                         <div className='w-[20px] h-[20px] bg-black absolute mt-6 rounded-full border-2 border-gray-400'></div>
                     </div>
-                    <div className='pt-5 w-[60%]'>
+                    <div className='pt-5 md:w-[60%] w-[65%]'>
                       <h1 className='text-[20px] text-orange-500 font-light'>{edu.degree}</h1>
                       <h2 className='text-[13px] font-extrabold'>{edu.schoolName}</h2>
-                      <p className='text-[14px] text-gray-400'>{edu.descrip}</p>
+                      <p className={`text-[14px] text-gray-400 ${skillElips2 ? "collapsed4" : 'expanded4'}`}>{edu.descrip}</p>
+                      <span className="hid4 cursor-pointer text-blue-600 text-[12px]" onClick={()=>setSkillElips2(!skillElips2)}>{skillElips2 ? 'See more' : 'See less'}</span>
                     </div>
                   </div>
                 ))

@@ -13,7 +13,6 @@ import React, { Fragment, lazy } from 'react'
 
 
 const ScrollAmount = lazy(()=> import('../Pages/ScrollAmount/ScrollAmount'));
-const Rotate = lazy(()=> import('../Pages/Rotate/Rotate'));
 const Navbar = lazy(()=> import('../Pages/Navbar/Navbar'));
 const Header = lazy(()=> import('../Pages/Header/Header'));
 const About = lazy(()=> import('../Pages/About/About'));
@@ -50,7 +49,7 @@ function LandingPage() {
         <ScrollAmount/>
         <Navbar/>
         <Header/>
-        <Rotate/>
+        {/* <Rotate/> */}
         <About/>
         <Services/>
         <Skills/>

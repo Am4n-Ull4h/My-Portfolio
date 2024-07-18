@@ -18,11 +18,11 @@ function ScrollAmount() {
 
   return (
     <Fragment>
-      <div className="fixed z-30 top-0 right-0 w-2  h-screen">
+      <div className="fixed z-30 top-0 w-full  h-1">
       <div
         id="progress-bar"
-        className="bg-orange-600 w-full"
-        style={{ height: `${scrollPercentage}%` }}
+        className="bg-orange-600 h-full"
+        style={{ width: `${scrollPercentage}%` }}
       ></div>
     </div>
     </Fragment>

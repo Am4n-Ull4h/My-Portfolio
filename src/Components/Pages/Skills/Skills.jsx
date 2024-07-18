@@ -106,14 +106,14 @@ let skillData = [
 function Skills() {
 
   const [visibleItems, setVisibleItems] = useState(4); // Initial number of items to show
-
+  const [skillElips, setSkillElips] = useState(true)
 
 
 
   return (
     <Fragment>
       <div
-        className="flex flex-col items-center D3 About_Design relative mt-16" 
+        className="flex flex-col items-center D3 About_Design relative md:mt-16 mt-7" 
         data-aos="fade-up"
       >
         <h1 className="text-[30px] font-extrabold relative">MY SKILLS</h1>
@@ -121,15 +121,16 @@ function Skills() {
           <div className="Div_Design_item h-[100%] w-[20%] rounded-full bg-orange-500"></div>
         </div>
       </div>
-      <div className="mt-16 flex Skill_Bg pb-10">
-        <div className="w-[45%]">
+      <div className="md:mt-16 mt-10 flex md:flex-nowrap flex-wrap Skill_Bg pb-10">
+        <div className="md:w-[45%] sm:w-[60%] w-[80%] md:mx-0 mx-auto">
           <img src="./Skillimg.webp" className="w-full dropShadow" alt="" />
         </div>
-        <div className="w-[55%] ">
-          <p className="w-[80%] text-gray-500">
+        <div className="md:w-[55%] sm:w-[80%] w-[90%] md:mx-0 mx-auto">
+          <p className={`md:w-[80%] text-gray-500 ${skillElips ? "collapsed2" : 'expanded2'}`}>
           Web design and development professionals combine HTML, CSS, JavaScript, and WordPress for responsive websites, integrating UX/UI principles and managing backend functionality with Node.js. They optimize SEO, implement security measures, leverage analytics for user-centric improvements, and collaborate effectively to meet business objectives.
           </p>
-          <div className="flex justify-evenly flex-wrap pb-3 w-[90%] gap-y-3 mt-7 overflow-y-scroll h-[82vh] overScroll">
+          <span className="hid cursor-pointer text-blue-600 text-[12px]" onClick={()=>setSkillElips(!skillElips)}>{skillElips ? 'See more' : 'See less'}</span>
+          <div className="flex justify-evenly flex-wrap pb-3 md:w-[90%] gap-y-3 mt-7 overflow-y-scroll h-[82vh] overScroll">
       {skillData.slice(0, visibleItems).map((elm, ind) => (
         <div key={ind} className="flex w-[47%] shadow-2xl border bg-[#8080805b] p-5 items-center justify-evenly rounded-2xl hover:bg-orange-500 hover:text-white text-gray-500 skills_skill"
         style={{backdropFilter:'blur(2px)'}}>

@@ -54,24 +54,24 @@ function Services() {
             </div>
 
         </div>
-        <div className='w-[80%] mx-auto flex flex-col items-center text-white'>
-            <div className='w-[90%] mx-auto flex items-center gap-3'>
-                <div className='w-[30%] h-[15vh] rounded-full bg-black' style={{background:'url(./meeting1.webp', backgroundSize:'cover',backgroundPosition:'center'}}>
+        <div className='sm:w-[80%] w-[90%] mx-auto flex flex-col items-center text-white'>
+            <div className='md:w-[90%] w-full mx-auto flex items-center gap-3'>
+                <div className='md:w-[30%] w-[20%] md:h-[15vh] h-[9vh] rounded-full bg-black' style={{background:'url(./meeting1.webp', backgroundSize:'cover',backgroundPosition:'center'}}>
 
                 </div>
-                <p className='text-[50px] font-extralight'>Turn your <span className='text-[50px] font-extrabold stroke'>Ideas</span></p>
+                <p className='md:text-[50px] text-[40px] font-extralight'>Turn your <span className=' font-extrabold stroke'>Ideas</span></p>
             </div>
             <div className='w-[100%] mx-auto flex items-center  justify-end  gap-3'>
-                <p className='text-[50px] font-extrabold'><span className='stroke'>Into</span> <span className=' font-extralight'>Reality</span></p>
-                <div className='w-[20%] cursor-pointer h-[10vh] flex justify-center items-center rounded-full bg-orange-500'>
+                <p className='md:text-[50px] text-[40px] font-extrabold'><span className='stroke'>Into</span> <span className=' font-extralight'>Reality</span></p>
+                <div className='md:w-[20%] sm:w-[30%] w-[35%] cursor-pointer md:h-[10vh] h-[7vh] flex justify-center items-center rounded-full bg-orange-500'>
                     <p className='flex gap-3'>What I Do <span className='p-2 rounded-full bg-black text-white'><LiaNetworkWiredSolid/></span></p>
                 </div>
             </div>
         </div>
-        <div className='flex w-[80%] mx-auto mt-10'>
+        <div className='flex lg:flex-nowrap flex-wrap sm:w-[80%] w-[90%] mx-auto mt-10'>
             {
                 skillsData.map((skill, index) => (
-                    <div key={index} className='py-5 px-4 text-white border  border-gray-600 relative w-[25%] Skill_Design'>
+                    <div key={index} className='py-5 px-4 text-white border  border-gray-600 relative lg:w-[25%] md:w-[50%] w-[90%] md:mx-0 mx-auto Skill_Design'>
                         <div className=''>
                             <p className='text-lg font-bold'>{skill.skillName}</p>
                         </div>

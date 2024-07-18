@@ -36,7 +36,7 @@ const ParticlesGlobe = () => {
 
 const App = () => {
   return (
-    <div className="canvas-container absolute z-10 right-0">
+    <div className="canvas-container absolute bottom-0 right-0">
       <Canvas camera={{ position: [0, 0, 4], fov: 75 }}>
         <ambientLight intensity={0.5} />
         <ParticlesGlobe />

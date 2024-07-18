@@ -206,3 +206,59 @@
   .Work_Design_Par:hover img{
     transform: scale(1.2);
   }
+
+  .Work_Ellipsis{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+  .hid{
+    display: none;
+  }
+  .hid4{
+    display: none;
+  }
+
+  @media (max-width: 1000px) {
+    .collapsed4 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+    }
+  
+    .expanded4 {
+      display: block;
+    }
+
+    .hid4{
+      display: block;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+    .collapsed2 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+    }
+  
+    .expanded2 {
+      display: block;
+    }
+    .collapsed3{
+      -webkit-line-clamp: 1;
+    }
+    .hid{
+      display: block;
+    }
+  }
