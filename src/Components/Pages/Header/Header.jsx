@@ -89,7 +89,7 @@ function Header() {
               </span>
             </button>
           </div>
-          <img src="./aman3.webp" className="md:w-[50%] w-[80%] block mx-auto md:absolute lg:top-0 bottom-0 right-3" alt="" data-aos='zoom-in' />
+          <img src="https://am4n-portfolio.netlify.app/aman3.webp" className="md:w-[50%] w-[80%] block mx-auto md:absolute lg:top-0 bottom-0 right-3" alt="" data-aos='zoom-in' />
         </div>
         
       </div>

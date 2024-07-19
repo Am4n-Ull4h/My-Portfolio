@@ -56,7 +56,7 @@ function Services() {
         </div>
         <div className='sm:w-[80%] w-[90%] mx-auto flex flex-col items-center text-white'>
             <div className='md:w-[90%] w-full mx-auto flex items-center gap-3 ServiceTurn1'>
-                <div className='md:w-[30%] ServiceTurn2 w-[20%] md:h-[15vh] h-[9vh] rounded-full bg-black' style={{background:'url(./meeting1.webp', backgroundSize:'cover',backgroundPosition:'center'}}>
+                <div className='md:w-[30%] ServiceTurn2 w-[20%] md:h-[15vh] h-[9vh] rounded-full bg-black' style={{background:'url("https://am4n-portfolio.netlify.app/meeting1.webp")', backgroundSize:'cover',backgroundPosition:'center'}}>
 
                 </div>
                 <p className='md:text-[50px] text-[40px] font-extralight'>Turn your <span className=' font-extrabold stroke'>Ideas</span></p>

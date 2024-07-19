@@ -10,7 +10,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "Node",
-    img: "./chat.webp",
+    img: "https://am4n-portfolio.netlify.app/chat.webp",
     projectName: "Online Chat System",
     details:
       "This is a live chat system that will be used to communicate with others",
@@ -24,7 +24,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "Node",
-    img: "./WebApp.webp",
+    img: "https://am4n-portfolio.netlify.app/WebApp.webp",
     projectName: "Investor Web App",
     details:
       "Developed an Investor Web App using the MERN stack (MongoDB, Express, React, Node.js). This project included features for managing investments, tracking portfolios, and analyzing market trends. Additionally, it incorporated functionalities such as posting jobs, sharing Upwork stories similar to Instagram posts, and creating events.",
@@ -39,7 +39,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "Node",
-    img: "./landing.webp",
+    img: "https://am4n-portfolio.netlify.app/landing.webp",
     projectName: "Investor App Landing-Page",
     details:
       "Developed an Investor Landing Page using the MERN stack (MongoDB, Express, React, Node.js). This project included features for managing investments, tracking portfolios, and analyzing market trends. Additionally, it incorporated functionalities such as posting jobs, sharing Upwork stories similar to Instagram posts, and creating events.",
@@ -52,7 +52,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "UX",
-    img: "./pricing.webp",
+    img: "https://am4n-portfolio.netlify.app/pricing.webp",
     projectName: "Pricing Plan Landing Page",
     details:
     "I developed a Pricing Plan Landing Page for an Upwork client using Next.js. This project involved creating a dynamic and responsive landing page that effectively showcases pricing options and encourages user engagement. Leveraging Next.js, I ensured fast performance and seamless navigation, enhancing the client's online presence and conversion rates",
@@ -65,7 +65,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "Node",
-    img: "./admin.webp",
+    img: "https://am4n-portfolio.netlify.app/admin.webp",
     projectName: "Clikkle-Web-App / Admin-Panel",
     details:
       "Developed the Clikkle-Web-App and Admin-Panel using the MERN stack (MongoDB, Express, React, Node.js). This project included creating a responsive web application and an intuitive admin panel for efficient content management. Focused on user-friendly design, secure data operations, and seamless functionality to support business operations.",
@@ -78,7 +78,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ3: "Node",
-    img: "./method.webp",
+    img: "https://am4n-portfolio.netlify.app/method.webp",
     projectName: "Payment Method",
     details:
       "Developed a robust Payment Method system using the MERN stack (MongoDB, Express, React, Node.js). Focused on creating a secure and efficient payment process, ensuring seamless integration with various payment gateways. Emphasized responsive design, user-friendly interfaces, and optimized backend performance for reliable transactions.",
@@ -93,7 +93,7 @@ let projetsData = [
     categ2: "React",
     categ3: "HTML",
     categ4: "UX",
-    img: "./payment.webp",
+    img: "https://am4n-portfolio.netlify.app/payment.webp",
     projectName: "Payment Card Creation",
     details:
       "Developed a robust Payment Method system using the MERN stack (MongoDB, Express, React, Node.js). Focused on creating a secure and efficient payment process, ensuring seamless integration with various payment gateways. Emphasized responsive design, user-friendly interfaces, and optimized backend performance for reliable transactions.",
@@ -107,7 +107,7 @@ let projetsData = [
     categ2: "React",
     categ3: "Node",
     categ4: "UX",
-    img: "./shop.webp",
+    img: "https://am4n-portfolio.netlify.app/shop.webp",
     projectName: "Online Shop Store",
     details:
       "I undertook the development of an Online Shop Store as a PHP/Laravel developer. This project aimed to provide a seamless e-commerce experience for users in Pakistan, leveraging the robust capabilities of PHP and Laravel framework. I led the development efforts to build a fully functional e-commerce platform from scratch using PHP and Laravel.",
@@ -121,7 +121,7 @@ let projetsData = [
     categ2: "React",
     categ3: "Node",
     categ4: "HTML",
-    img: "./advocate.webp",
+    img: "https://am4n-portfolio.netlify.app/advocate.webp",
     projectName: "Advocate-Iron",
     details:
       "As a MERN Stack Developer for Advocate-Iron.com, I spearheaded the creation of robust web applications utilizing MongoDB, Express.js, React.js, and Node.js technologies. Leveraging these powerful tools, I crafted customized solutions tailored to enhance Advocate-Iron.com's digital presence.",
@@ -135,7 +135,7 @@ let projetsData = [
     categ2: "React",
     categ3: "Node",
     categ4: "HTML",
-    img: "./tip.webp",
+    img: "https://am4n-portfolio.netlify.app/tip.webp",
     projectName: "Tipanonymous",
     details:
       "As a Remote Full Stack Developer at Tipanonymous.com, I led the development of a 15-page website using React and Next.js for the front end, ensuring high performance. I utilized Node.js, Express, and MongoDB on the back end for efficient data management, delivering enhanced user engagement and accessibility.",
@@ -148,7 +148,7 @@ let projetsData = [
     categ1: "All",
     categ2: "React",
     categ4: "HTML",
-    img: "./tai.webp",
+    img: "https://am4n-portfolio.netlify.app/tai.webp",
     projectName: "taireglement.fr",
     details:
       "As a Laravel Developer for www.taireglement.fr, I took charge of developing the admin dashboard and its entire backend infrastructure. Leveraging Laravel's robust framework, I meticulously crafted a user-friendly and efficient admin interface tailored to meet the specific needs of the platform.",
@@ -162,7 +162,7 @@ let projetsData = [
     categ2: "React",
     categ3: "UX",
     categ4: "HTML",
-    img: "./front.png",
+    img: "https://am4n-portfolio.netlify.app/front.png",
     projectName: "Jason Rager",
     details:
       "As a Remote Front-end Developer specializing in Responsiveness, I led design efforts to optimize user experiences across websites and apps. Collaborating closely with the CEO and product team. My focus on crafting responsive designs ensured seamless interactions across various platforms, fostering heightened user satisfaction.",

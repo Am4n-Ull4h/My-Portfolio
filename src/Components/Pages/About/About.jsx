@@ -93,7 +93,7 @@ function About() {
         <div className="flex md:flex-nowrap flex-wrap md:justify-evenly md:mt-10 mt-4 py-5" >
           <div className="lg:w-[30%] sm:w-[50%] w-[70%] md:mx-0 mx-auto flex justify-center relative   items-center">
           <div className="w-[98%] h-[98%] relative bg-white z-10">
-            <img src="./aman2.webp" alt="" />
+            <img src="https://am4n-portfolio.netlify.app/aman2.webp" alt="" />
             {/* <Carousel
               className="w-full"
               plugins={[

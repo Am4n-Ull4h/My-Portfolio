@@ -54,7 +54,7 @@ function Navbar() {
                   <a href="#about">About</a>
                 </li>
                 <li className="text-[20px] font-extrabold hover:text-orange-500 hover:ps-3 cursor-pointer" onClick={()=>setShowNav(false)}>
-                  <a href="#work">Work</a>
+                  <a href="#works">Work</a>
                 </li>{" "}
                 <li className="text-[20px] font-extrabold hover:text-orange-500 hover:ps-3 cursor-pointer" onClick={()=>setShowNav(false)}>
                   <a href="#contact">Contact</a>

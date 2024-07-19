@@ -2,83 +2,83 @@ import React, { Fragment, useState } from "react";
 
 let skillData = [
   {
-    img: "./react.png",
+    img: "https://am4n-portfolio.netlify.app/react.png",
     name: "React",
   },
   {
-    img: "./node-js.png",
+    img: "https://am4n-portfolio.netlify.app/node-js.png",
     name: "Node",
   },
   {
-    img: "./php.png",
+    img: "https://am4n-portfolio.netlify.app/php.png",
     name: "PHP",
   },
   {
-    img: "./python.png",
+    img: "https://am4n-portfolio.netlify.app/python.png",
     name: "Python",
   },
   {
-    img: "./sql-server.png",
+    img: "https://am4n-portfolio.netlify.app/sql-server.png",
     name: "SQL",
   },
   {
-    img: "./mongo.png",
+    img: "https://am4n-portfolio.netlify.app/mongo.png",
     name: "MongoDB",
   },
   {
-    img: "./js.png",
+    img: "https://am4n-portfolio.netlify.app/js.png",
     name: "JavaScript",
   },
   {
-    img: "./figma.png",
+    img: "https://am4n-portfolio.netlify.app/figma.png",
     name: "Figma",
   },
   {
-    img: "./bootstrap.png",
+    img: "https://am4n-portfolio.netlify.app/bootstrap.png",
     name: "Bootstrap",
   },
   {
-    img: "./html-5.png",
+    img: "https://am4n-portfolio.netlify.app/html-5.png",
     name: "HTML",
   },
   {
-    img: "./css-3.png",
+    img: "https://am4n-portfolio.netlify.app/css-3.png",
     name: "CSS",
   },
   {
-    img: "./seo.png",
+    img: "https://am4n-portfolio.netlify.app/seo.png",
     name: "SEO",
   },
   {
-    img: "./aws.png",
+    img: "https://am4n-portfolio.netlify.app/aws.png",
     name: "AWS",
   },
   {
-    img: "./github.png",
+    img: "https://am4n-portfolio.netlify.app/github.png",
     name: "GitHub",
   },
   {
-    img: "./typescript.png",
+    img: "https://am4n-portfolio.netlify.app/typescript.png",
     name: "TypeScript",
   },
   {
-    img: "./wordpress.png",
+    img: "https://am4n-portfolio.netlify.app/wordpress.png",
     name: "WordPress",
   },
   {
-    img: "./material.png",
+    img: "https://am4n-portfolio.netlify.app/material.png",
     name: "Material UI",
   },
   {
-    img: "./shad.png",
+    img: "https://am4n-portfolio.netlify.app/shad.png",
     name: "Shadcn UI",
   },
   {
-    img: "./three.png",
+    img: "https://am4n-portfolio.netlify.app/three.png",
     name: "ThreeJS",
   },
   {
-    img: "./cloud.png",
+    img: "https://am4n-portfolio.netlify.app/cloud.png",
     name: "CloudFlare",
   },
 ];
@@ -103,7 +103,7 @@ function Skills() {
       </div>
       <div className="md:mt-16 mt-10 flex md:flex-nowrap flex-wrap Skill_Bg pb-10">
         <div className="md:w-[45%] sm:w-[60%] w-[80%] md:mx-0 mx-auto">
-          <img src="./Skillimg.webp" className="w-full dropShadow" alt="" />
+          <img src="https://am4n-portfolio.netlify.app/Skillimg.webp" className="w-full dropShadow" alt="" />
         </div>
         <div className="md:w-[55%] sm:w-[80%] w-[90%] md:mx-0 mx-auto">
           <p className={`md:w-[80%] text-gray-500 ${skillElips ? "collapsed2" : 'expanded2'}`}>
